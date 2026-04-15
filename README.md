@@ -1,23 +1,34 @@
-BorsaNova Terminal - Kripto Varlık ve Strateji Ağı
+BorsaNova - Kripto Varlık ve Strateji Ağı
+
 React (Vite) tabanlı geliştirilmiş, çift uzak API entegrasyonlu (Kripto ve Döviz) ve canlı portföy yönetimini sağlayan (CRUD) modern finansal gösterge paneli.
 
 🚀 Özellikler
+
 ✅ Uzak API'lerden canlı veri çekme (Coinlore & ExchangeRate)
+
 ✅ Çift para birimi gösterimi ve anlık hesaplama (USD ve TRY)
+
 ✅ Yeni portföy pozisyonu ekleme (Form)
+
 ✅ Pozisyon detaylarını güncelleme ve silme (CRUD)
+
 ✅ Lüks Cam Efekti (Glassmorphism) ve Dark Mode arayüz
+
 ✅ TypeScript desteği
+
 ✅ Netlify'a deploy edilebilir
 
 📦 Kurulum
-Bash
+
 # Bağımlılıkları yükle
 npm install
 
 # Geliştirme sunucusunu başlat
 npm run dev
+
+
 🌐 Deploy (Netlify)
+
 GitHub'a push et
 
 Netlify'da "New site from Git" seç
@@ -30,12 +41,13 @@ Publish dizini: dist
 
 Veya Netlify CLI ile:
 
-Bash
 npm install -g netlify-cli
 netlify login
 netlify deploy --prod
+
+
 📁 Proje Yapısı
-Plaintext
+
 src/
 ├── Components/
 │   ├── TerminalForm.tsx      # Pozisyon açma ve güncelleme formu
@@ -47,7 +59,10 @@ src/
 ├── App.tsx                   # Uygulama kökü
 ├── index.css                 # Global stiller (Tailwind & Cam Efekti)
 └── main.tsx                  # React DOM girişi
+
+
 🔧 Teknolojiler
+
 React (Vite) - Modern UI kütüphanesi
 
 TypeScript - Tip güvenliği ve ölçeklenebilirlik
@@ -59,6 +74,7 @@ Fetch API - HTTP asenkron veri istekleri
 Netlify - Statik hosting
 
 📝 API Endpoint
+
 Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
 
 Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
@@ -66,4 +82,5 @@ Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
 Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
 
 👨‍💻 Geliştirici
-BorsaNova - Muhammed Samed KURUKAYA
+
+BorsaNova - By Muhammed Samed KURUKAYA
