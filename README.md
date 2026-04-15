@@ -1,4 +1,4 @@
-BorsaNova - Kripto Varlık ve Strateji Ağı
+Nexus Terminal - Kripto Varlık ve Strateji Ağı
 
 React (Vite) tabanlı geliştirilmiş, çift uzak API entegrasyonlu (Kripto ve Döviz) ve canlı portföy yönetimini sağlayan (CRUD) modern finansal gösterge paneli.
 
@@ -83,4 +83,4 @@ Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
 
 👨‍💻 Geliştirici
 
-BorsaNova - By Muhammed Samed KURUKAYA
+Nexus Terminal - React/Vite Kapsamlı Eğitim Projesi
