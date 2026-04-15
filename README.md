@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+BorsaNova Terminal - Kripto Varlık ve Strateji Ağı
+React (Vite) tabanlı geliştirilmiş, çift uzak API entegrasyonlu (Kripto ve Döviz) ve canlı portföy yönetimini sağlayan (CRUD) modern finansal gösterge paneli.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Özellikler
+✅ Uzak API'lerden canlı veri çekme (Coinlore & ExchangeRate)
+✅ Çift para birimi gösterimi ve anlık hesaplama (USD ve TRY)
+✅ Yeni portföy pozisyonu ekleme (Form)
+✅ Pozisyon detaylarını güncelleme ve silme (CRUD)
+✅ Lüks Cam Efekti (Glassmorphism) ve Dark Mode arayüz
+✅ TypeScript desteği
+✅ Netlify'a deploy edilebilir
 
-Currently, two official plugins are available:
+📦 Kurulum
+Bash
+# Bağımlılıkları yükle
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Geliştirme sunucusunu başlat
+npm run dev
+🌐 Deploy (Netlify)
+GitHub'a push et
 
-## React Compiler
+Netlify'da "New site from Git" seç
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GitHub reposunu bağla
 
-## Expanding the ESLint configuration
+Build komutu: npm run build
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Publish dizini: dist
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Veya Netlify CLI ile:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Bash
+npm install -g netlify-cli
+netlify login
+netlify deploy --prod
+📁 Proje Yapısı
+Plaintext
+src/
+├── Components/
+│   ├── TerminalForm.tsx      # Pozisyon açma ve güncelleme formu
+│   └── TerminalList.tsx      # Portföy listesi ve kar/zarar hesaplamaları
+├── Interfaces/
+│   └── ITerminal.ts          # TypeScript veri modelleri
+├── Pages/
+│   └── Dashboard.tsx         # Ana sayfa, API çağrıları ve State yönetimi
+├── App.tsx                   # Uygulama kökü
+├── index.css                 # Global stiller (Tailwind & Cam Efekti)
+└── main.tsx                  # React DOM girişi
+🔧 Teknolojiler
+React (Vite) - Modern UI kütüphanesi
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+TypeScript - Tip güvenliği ve ölçeklenebilirlik
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tailwind CSS - Hızlı ve modern stil yönetimi
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Fetch API - HTTP asenkron veri istekleri
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Netlify - Statik hosting
+
+📝 API Endpoint
+Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
+
+Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
+
+Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
+
+👨‍💻 Geliştirici
+BorsaNova - Muhammed Samed KURUKAYA
