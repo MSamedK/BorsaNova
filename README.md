@@ -1,86 +1,41 @@
-Nexus Terminal - Kripto Varlık ve Strateji Ağı
+# 🌌 BorsaNova - Kripto Varlık ve Strateji Ağı
 
-React (Vite) tabanlı geliştirilmiş, çift uzak API entegrasyonlu (Kripto ve Döviz) ve canlı portföy yönetimini sağlayan (CRUD) modern finansal gösterge paneli.
+Nexus Terminal, yatırımcıların canlı kripto para verilerini anlık olarak takip edebildiği, kendi stratejilerini belirleyip portföylerini yönetebildiği (CRUD) modern ve responsive bir finansal gösterge panelidir (Dashboard). 
 
-Özellikler
+Proje, sektör standartlarında çift para birimi (USD/TRY) hesaplaması yapmaktadır.
 
-Uzak API'lerden canlı veri çekme (Coinlore & ExchangeRate)
+## 🚀 Öne Çıkan Özellikler
 
-Çift para birimi gösterimi ve anlık hesaplama (USD ve TRY)
+* **Canlı Veri Akışı:** Kripto para fiyatları ve 24 saatlik değişim oranları anlık olarak API üzerinden çekilir.
+* **Çift Para Birimi (Multi-Currency):** Global USD/TRY paritesi canlı olarak alınır ve kullanıcının portföyündeki tüm kar/zarar hesaplamaları "noktasına virgülüne kadar" Türkiye standartlarında (₺) gösterilir.
+* **Tam Kapsamlı CRUD İşlemleri:**
+  * **Oluştur (Create):** Canlı veriler arasından varlık seçimi yapıp miktar, giriş fiyatı ve strateji notu ile yeni pozisyon açma.
+  * **Oku (Read):** Portföydeki varlıkların toplam değerini ve anlık durumunu kartlar halinde listeleme.
+  * **Güncelle (Update):** Mevcut pozisyonların risk profilini ve verilerini anında düzenleme.
+  * **Sil (Delete):** Kapatılan pozisyonları sistemden tek tıkla yok etme.
+* **CORS Korumalı Mimari:** Tarayıcı güvenliği (CORS) kısıtlamalarına takılmadan doğrudan Frontend üzerinden çalışabilen güvenli API entegrasyonları.
+* **Modern Arayüz:** Tailwind CSS ile kurgulanmış, tamamen mobil uyumlu (responsive), gece mavisi ve altın sarısı tonlarında kurumsal Dark Mode tasarımı.
 
-Yeni portföy pozisyonu ekleme (Form)
+## 🛠 Kullanılan Teknolojiler
 
-Pozisyon detaylarını güncelleme ve silme (CRUD)
+* **Framework:** React (Vite)
+* **Dil:** TypeScript (Sıkı tip denetimi ve Interface mimarisi)
+* **Stil:** Tailwind CSS
+* **API 1:** [Coinlore API](https://www.coinlore.com/cryptocurrency-data-api) (Kripto Fiyatları - CORS Friendly)
+* **API 2:** [ExchangeRate-API](https://www.exchangerate-api.com/) (Canlı Döviz Kuru)
 
-Lüks Cam Efekti (Glassmorphism) ve Dark Mode arayüz
+## 📁 Proje Mimarisi
 
-TypeScript desteği
+Proje, modern React standartlarına uygun olarak modüler bir klasör ağacıyla inşa edilmiştir:
 
-Netlify'a deploy edilebilir
-
-Kurulum
-
-# Bağımlılıkları yükle
-npm install
-
-# Geliştirme sunucusunu başlat
-npm run dev
-
-
-Deploy (Netlify)
-
-GitHub'a push et
-
-Netlify'da "New site from Git" seç
-
-GitHub reposunu bağla
-
-Build komutu: npm run build
-
-Publish dizini: dist
-
-Veya Netlify CLI ile:
-
-npm install -g netlify-cli
-netlify login
-netlify deploy --prod
-
-
-Proje Yapısı
-
+```text
 src/
-├── Components/
-│   ├── TerminalForm.tsx      # Pozisyon açma ve güncelleme formu
-│   └── TerminalList.tsx      # Portföy listesi ve kar/zarar hesaplamaları
-├── Interfaces/
-│   └── ITerminal.ts          # TypeScript veri modelleri
-├── Pages/
-│   └── Dashboard.tsx         # Ana sayfa, API çağrıları ve State yönetimi
-├── App.tsx                   # Uygulama kökü
-├── index.css                 # Global stiller (Tailwind & Cam Efekti)
-└── main.tsx                  # React DOM girişi
-
-
-Teknolojiler
-
-React (Vite) - Modern UI kütüphanesi
-
-TypeScript - Tip güvenliği ve ölçeklenebilirlik
-
-Tailwind CSS - Hızlı ve modern stil yönetimi
-
-Fetch API - HTTP asenkron veri istekleri
-
-Netlify - Statik hosting
-
-API Endpoint
-
-Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
-
-Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
-
-Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
-
-Geliştirici
-
-Nexus Terminal - React/Vite Kapsamlı Eğitim Projesi
+├── Components/         # Form ve Liste gibi tekrar kullanılabilir arayüz parçaları
+│   ├── TerminalForm.tsx
+│   └── TerminalList.tsx
+├── Interfaces/         # TypeScript tip tanımlamaları ve veri modelleri
+│   └── ITerminal.ts
+├── Pages/              # State yönetimini ve API çağrılarını barındıran ana sayfa
+│   └── Dashboard.tsx
+├── App.tsx             # Kök bileşen
+└── index.css           # Global stiller ve animasyonlar
