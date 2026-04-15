@@ -2,23 +2,23 @@ Nexus Terminal - Kripto Varlık ve Strateji Ağı
 
 React (Vite) tabanlı geliştirilmiş, çift uzak API entegrasyonlu (Kripto ve Döviz) ve canlı portföy yönetimini sağlayan (CRUD) modern finansal gösterge paneli.
 
-🚀 Özellikler
+Özellikler
 
-✅ Uzak API'lerden canlı veri çekme (Coinlore & ExchangeRate)
+Uzak API'lerden canlı veri çekme (Coinlore & ExchangeRate)
 
-✅ Çift para birimi gösterimi ve anlık hesaplama (USD ve TRY)
+Çift para birimi gösterimi ve anlık hesaplama (USD ve TRY)
 
-✅ Yeni portföy pozisyonu ekleme (Form)
+Yeni portföy pozisyonu ekleme (Form)
 
-✅ Pozisyon detaylarını güncelleme ve silme (CRUD)
+Pozisyon detaylarını güncelleme ve silme (CRUD)
 
-✅ Lüks Cam Efekti (Glassmorphism) ve Dark Mode arayüz
+Lüks Cam Efekti (Glassmorphism) ve Dark Mode arayüz
 
-✅ TypeScript desteği
+TypeScript desteği
 
-✅ Netlify'a deploy edilebilir
+Netlify'a deploy edilebilir
 
-📦 Kurulum
+Kurulum
 
 # Bağımlılıkları yükle
 npm install
@@ -27,7 +27,7 @@ npm install
 npm run dev
 
 
-🌐 Deploy (Netlify)
+Deploy (Netlify)
 
 GitHub'a push et
 
@@ -46,7 +46,7 @@ netlify login
 netlify deploy --prod
 
 
-📁 Proje Yapısı
+Proje Yapısı
 
 src/
 ├── Components/
@@ -61,7 +61,7 @@ src/
 └── main.tsx                  # React DOM girişi
 
 
-🔧 Teknolojiler
+Teknolojiler
 
 React (Vite) - Modern UI kütüphanesi
 
@@ -73,7 +73,7 @@ Fetch API - HTTP asenkron veri istekleri
 
 Netlify - Statik hosting
 
-📝 API Endpoint
+API Endpoint
 
 Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
 
@@ -81,6 +81,6 @@ Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
 
 Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
 
-👨‍💻 Geliştirici
+Geliştirici
 
 Nexus Terminal - React/Vite Kapsamlı Eğitim Projesi
