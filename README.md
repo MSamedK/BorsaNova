@@ -41,7 +41,7 @@ src/
 └── index.css           # Global stiller ve animasyonlar
 ```
 ## 📦 KURULUM
-
+```text
 # Git'i projede başlatır
 git init
 
@@ -50,3 +50,4 @@ git add .
 
 # Değişiklikleri mühürler ve isimlendirir
 git commit -m "İlk sürüm: BorsaNova Canlı Kripto Terminali"
+```
