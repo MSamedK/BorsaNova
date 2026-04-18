@@ -48,7 +48,7 @@ Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
 * **API 1:** Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
 * **API 2:** Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
 
-👨‍💻 Geliştirici
+## 👨‍💻 Geliştirici
 BorsaNova - React/Vite Kapsamlı Eğitim Bitirme Projesi
 
 
