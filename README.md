@@ -16,13 +16,14 @@ Proje, sektör standartlarında çift para birimi (USD/TRY) hesaplaması yapmakt
 * **CORS Korumalı Mimari:** Tarayıcı güvenliği (CORS) kısıtlamalarına takılmadan doğrudan Frontend üzerinden çalışabilen güvenli API entegrasyonları.
 * **Modern Arayüz:** Tailwind CSS ile kurgulanmış, tamamen mobil uyumlu (responsive), gece mavisi ve altın sarısı tonlarında kurumsal Dark Mode tasarımı.
 
+
 ## 🛠 KULLANILAN TEKNOLOJİLER
 
-* **Framework:** React (Vite)
-* **Dil:** TypeScript (Sıkı tip denetimi ve Interface mimarisi)
-* **Stil:** Tailwind CSS
-* **API 1:** [Coinlore API](https://www.coinlore.com/cryptocurrency-data-api) (Kripto Fiyatları - CORS Friendly)
-* **API 2:** [ExchangeRate-API](https://www.exchangerate-api.com/) (Canlı Döviz Kuru)
+* **Framework:** React (Vite) - Modern UI kütüphanesi
+* **Dil:** TypeScript - Tip güvenliği ve ölçeklenebilirlik
+* **Stil:** Tailwind CSS - Hızlı ve modern stil yönetimi
+* **Service:** Fetch API - HTTP asenkron veri istekleri
+* **Platform:** Netlify - Statik hosting
 
 ## 📁 PROJE MİMARİSİ
 
@@ -40,14 +41,34 @@ src/
 ├── App.tsx             # Kök bileşen
 └── index.css           # Global stiller ve animasyonlar
 ```
+
+## 📝 API Endpoint
+
+Projede iki farklı güvenli (CORS dostu) API kullanılmaktadır:
+* **API 1:** Kripto Fiyatları (GET): https://api.coinlore.net/api/tickers/?start=0&limit=20
+* **API 2:** Güncel Kur/TRY (GET): https://api.exchangerate-api.com/v4/latest/USD
+
+👨‍💻 Geliştirici
+BorsaNova - React/Vite Kapsamlı Eğitim Bitirme Projesi
+
+
 ## 📦 KURULUM
 ```text
-# Git'i projede başlatır
-git init
+# Bağımlılıkları yükle
+npm install
 
-# Tüm dosyaları paketlemeye hazırlar (Noktaya dikkat et)
-git add .
-
-# Değişiklikleri mühürler ve isimlendirir
-git commit -m "İlk sürüm: BorsaNova Canlı Kripto Terminali"
+# Geliştirme sunucusunu başlat
+npm run dev
 ```
+
+## 🌐 Deploy (Netlify)
+
+1. GitHub'a push et
+
+2. Netlify'da "New site from Git" seç
+
+3. GitHub reposunu bağla
+
+4. Build komutu: npm run build
+
+5. Publish dizini: dist
