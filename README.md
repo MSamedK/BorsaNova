@@ -71,5 +71,5 @@ npm run dev
 5. Publish dizini: dist
 
 ## 👨‍💻 Geliştirici
-BorsaNova - React/Vite Kapsamlı Eğitim Bitirme Projesi
+BorsaNova - Muhammed Samed KURUKAYA
 
