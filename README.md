@@ -1,10 +1,10 @@
-# 🌌 BorsaNova - Kripto Varlık ve Strateji Ağı
+# 🌌 BorsaNova - KRİPTO VARLIK VE STRATEJİ AĞI
 
-Nexus Terminal, yatırımcıların canlı kripto para verilerini anlık olarak takip edebildiği, kendi stratejilerini belirleyip portföylerini yönetebildiği (CRUD) modern ve responsive bir finansal gösterge panelidir (Dashboard). 
+BorsaNova Terminali, yatırımcıların canlı kripto para verilerini anlık olarak takip edebildiği, kendi stratejilerini belirleyip portföylerini yönetebildiği (CRUD) modern ve responsive bir finansal gösterge panelidir (Dashboard). 
 
 Proje, sektör standartlarında çift para birimi (USD/TRY) hesaplaması yapmaktadır.
 
-## 🚀 Öne Çıkan Özellikler
+## 🚀 ÖNE ÇIKAN ÖZELLİKLER
 
 * **Canlı Veri Akışı:** Kripto para fiyatları ve 24 saatlik değişim oranları anlık olarak API üzerinden çekilir.
 * **Çift Para Birimi (Multi-Currency):** Global USD/TRY paritesi canlı olarak alınır ve kullanıcının portföyündeki tüm kar/zarar hesaplamaları "noktasına virgülüne kadar" Türkiye standartlarında (₺) gösterilir.
@@ -16,7 +16,7 @@ Proje, sektör standartlarında çift para birimi (USD/TRY) hesaplaması yapmakt
 * **CORS Korumalı Mimari:** Tarayıcı güvenliği (CORS) kısıtlamalarına takılmadan doğrudan Frontend üzerinden çalışabilen güvenli API entegrasyonları.
 * **Modern Arayüz:** Tailwind CSS ile kurgulanmış, tamamen mobil uyumlu (responsive), gece mavisi ve altın sarısı tonlarında kurumsal Dark Mode tasarımı.
 
-## 🛠 Kullanılan Teknolojiler
+## 🛠 KULLANILAN TEKNOLOJİLER
 
 * **Framework:** React (Vite)
 * **Dil:** TypeScript (Sıkı tip denetimi ve Interface mimarisi)
@@ -24,7 +24,7 @@ Proje, sektör standartlarında çift para birimi (USD/TRY) hesaplaması yapmakt
 * **API 1:** [Coinlore API](https://www.coinlore.com/cryptocurrency-data-api) (Kripto Fiyatları - CORS Friendly)
 * **API 2:** [ExchangeRate-API](https://www.exchangerate-api.com/) (Canlı Döviz Kuru)
 
-## 📁 Proje Mimarisi
+## 📁 PROJE MİMARİSİ
 
 Proje, modern React standartlarına uygun olarak modüler bir klasör ağacıyla inşa edilmiştir:
 
@@ -39,3 +39,14 @@ src/
 │   └── Dashboard.tsx
 ├── App.tsx             # Kök bileşen
 └── index.css           # Global stiller ve animasyonlar
+```
+## 📦 KURULUM
+
+# Git'i projede başlatır
+git init
+
+# Tüm dosyaları paketlemeye hazırlar (Noktaya dikkat et)
+git add .
+
+# Değişiklikleri mühürler ve isimlendirir
+git commit -m "İlk sürüm: BorsaNova Canlı Kripto Terminali"
